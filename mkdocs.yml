@@ -1,0 +1,29 @@
+site_name: My Docs
+theme:
+  name: material
+
+
+site_name: Umbra Docs
+repo_url: "https://github.com/ayvacs/umbra-docs"
+repo_name: ayvacs/umbra
+copyright: Copyright &copy; 2021 AYVACS on behalf of Umbra Software
+theme:
+  name: material
+  logo: assets/icon.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+  font:
+    text: Noto Sans
+    code: Roboto Mono
+  favicon: assets/favicon.ico
+
+extra:
+  social:
+    - icon: fontawesome/brands/git-alt
+      link: https://github.com/ayvacs
+    - icon: fontawesome/brands/github
+      link: https://github.com/ayvacs/umbra
