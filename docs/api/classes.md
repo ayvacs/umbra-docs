@@ -59,7 +59,7 @@ print( Umbra.Release )
 ### Get a user's `Subscription`
 
 ```
-print( Umbra.identity(user).Subscription )
+print( Umbra.Identity(user).Subscription )
 ```
 
 ## `SubType`
@@ -78,7 +78,7 @@ print( Umbra.identity(user).Subscription )
 ### Get a user's `SubType`
 
 ```
-print( Umbra.identity(user).SubType )
+print( Umbra.Identity(user).SubType )
 ```
 
 ## [Deprecated] `Codesign`
