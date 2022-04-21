@@ -6,6 +6,7 @@ theme:
   name: material
   custom_dir: overrides
   logo: assets/icon.png
+  favicon: assets/favicon.ico
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -17,7 +18,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.ico
+  favicon: assets/icon.png
 
 markdown_extensions:
   - pymdownx.emoji:
