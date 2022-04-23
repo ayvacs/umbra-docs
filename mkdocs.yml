@@ -37,5 +37,11 @@ extra:
 
 nav:
   - Home: index.md
-  - API:
-    - Classes: api/classes.md
+  - Classes: 
+    - Identity: classes/identity.md
+    - Release: classes/release.md
+    
+    - Codesign: classes/codesign.md
+  - Enums:
+    - Subscription: enums/subscription.md
+    - SubType: enums/subtype.md
