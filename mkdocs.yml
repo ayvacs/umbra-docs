@@ -48,3 +48,4 @@ nav:
     - Subscription: enums/subscription.md
     - SubType: enums/subtype.md
   - Core Functions: core-functions/index.md
+  - Feature Board: https://ave.is-a.dev/umbra/feature-board
