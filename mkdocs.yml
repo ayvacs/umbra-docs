@@ -36,11 +36,13 @@ extra:
       link: https://github.com/ayvacs/umbra
 
 nav:
-  - Home: index.md
+  - Home:
+    - Welcome: index.md
+    - Getting started: start/installation.md
   - Classes: 
     - Identity: classes/identity.md
     - Release: classes/release.md
-    
+
     - Codesign: classes/codesign.md
   - Enums:
     - Subscription: enums/subscription.md
