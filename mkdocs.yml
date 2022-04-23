@@ -1,6 +1,6 @@
 site_name: Umbra Docs
 repo_url: "https://github.com/ayvacs/umbra-docs"
-repo_name: ayvacs/umbra
+repo_name: ayvacs/umbra-docs
 copyright: Copyright &copy; 2021 AYVACS on behalf of Umbra Software
 theme:
   name: material
@@ -38,7 +38,7 @@ extra:
 nav:
   - Home:
     - Welcome: index.md
-    - Getting started: start/installation.md
+    - Getting started: scripting/getting-started.md
   - Classes: 
     - Identity: classes/identity.md
     - Release: classes/release.md
@@ -47,3 +47,4 @@ nav:
   - Enums:
     - Subscription: enums/subscription.md
     - SubType: enums/subtype.md
+  - Core Functions: core-functions/index.md

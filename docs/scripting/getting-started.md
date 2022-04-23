@@ -1,6 +1,6 @@
 # Getting started
 
-First, you'll need an **Umbra developer key.** If you don't have one, you can get it by following these steps:
+To write a script, you'll first need an **Umbra developer key.** If you don't have one, you can get it by following these steps:
 
 1. Log into the Umbra developer portal
 2. Go to **Home** > **Credentials** > **Create key**
@@ -14,4 +14,6 @@ First, you'll need an **Umbra developer key.** If you don't have one, you can ge
 
 You'll have to repeat these steps for each individual script that you create.
 
-Only one script at a time can be initialized with a certain key and token.
+Keep in mind that only one script at a time can be initialized with a certain key and token.
+
+**Congrats!** you just called the Umbra library in your script. Epic gamer move!!!
