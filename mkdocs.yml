@@ -39,6 +39,7 @@ nav:
   - Home:
     - Welcome: index.md
     - Getting started: scripting/getting-started.md
+    - Managing your Umbra account: scripting/my-account.md
   - Classes: 
     - Identity: classes/identity.md
     - Release: classes/release.md
