@@ -1,7 +1,7 @@
 site_name: Umbra Docs
 repo_url: "https://github.com/ayvacs/umbra-docs"
 repo_name: ayvacs/umbra-docs
-copyright: Copyright &copy; 2021 AYVACS on behalf of Umbra Software
+copyright: Copyright &copy; 2022 AYVACS on behalf of Umbra Software
 theme:
   name: material
   custom_dir: overrides
@@ -40,6 +40,13 @@ nav:
     - Welcome: index.md
     - Getting started: scripting/getting-started.md
     - Managing your Umbra account: scripting/my-account.md
+    - Umbra DevKit:
+      - Create an account: devkit/create-an-account.md
+      - Create and publish scripts: devkit/create-scripts.md
+      - Accept transactions: devkit/accept-transactions.md
+    - Umbra WebAPI:
+      - Home: web-api/index.md
+    - Copyright &copy; 2022 AYVACS on behalf of Umbra Software: legal/index.md
   - Classes: 
     - Identity: classes/identity.md
     - Release: classes/release.md

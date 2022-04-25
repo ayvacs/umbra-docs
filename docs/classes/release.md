@@ -19,5 +19,5 @@
 `Release` is grabbed using a variable instead of with a function.
 
 ```
-print( Umbra:Release )
+print( Umbra.Release )
 ```
