@@ -48,6 +48,8 @@ nav:
       - Home: web-api/index.md
     - Copyright &copy; 2022 AYVACS on behalf of Umbra Software: legal/index.md
   - Classes: 
+    - HttpRequest: classes/http-request.md
+    - HttpResponse: classes/http-response.md
     - Identity: classes/identity.md
     - Release: classes/release.md
 
@@ -55,5 +57,7 @@ nav:
   - Enums:
     - Subscription: enums/subscription.md
     - SubType: enums/subtype.md
-  - Core Functions: core-functions/index.md
+  - Libraries:
+    - http: lib/http.md
+    - Umbra: lib/umbra.md
   - Feature Board: https://ave.is-a.dev/umbra/feature-board

@@ -1,18 +1,22 @@
-# Core Functions
+# `Umbra` Library
 
-## `int()`
+wip
+
+## Functions
+
+### `int()`
 
 `number int(n: any)`
 
 Converts `n` to a number. Equivalent to `tonumber()`.
 
-## `str()`
+### `str()`
 
 `string str(s: any)`
 
 Converts `s` to a string. Equivalent to `tostring()`.
 
-## `typ()`
+### `typ()`
 
 `string typ(n: any)`
 
