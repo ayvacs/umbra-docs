@@ -6,13 +6,13 @@
 
 |Value|Description|
 |---|---|
-|`Release.Commit`|Returns the current version's Git commit ID|
-|`Release.CommitHash`|Returns the current version's Git commit hash|
-|`Release.Name`|One of `Umbra`, `Umbra Canary`, `Umbra Nightly`|
-|`Release.Url`|Returns `https://ave.is-a.dev/umbra` to specify the Umbra website URL|
-|`Release.Version`|Returns the current version's ID code|
-|`Release.type1`|Equivalent to `Release.Name .. " v" .. Release.Version`|
-|`Release.type2`|Equivalent to `Release.Name .. " v" .. Release.Version .. " [" .. Release.Commit .. "] | " .. Release.Url`|
+|`Commit`|Returns the current version's Git commit ID|
+|`CommitHash`|Returns the current version's Git commit hash|
+|`Name`|One of `Umbra`, `Umbra Canary`, `Umbra Nightly`|
+|`Url`|Returns `https://ave.is-a.dev/umbra` to specify the Umbra website URL|
+|`Version`|Returns the current version's ID code|
+|`type1`|Equivalent to `Release.Name .. " v" .. Release.Version`|
+|`type2`|Equivalent to `Release.Name .. " v" .. Release.Version .. " [" .. Release.Commit .. "] | " .. Release.Url`|
 
 ### Get `Release`
 

@@ -8,11 +8,11 @@ If an exploit is found to bypass this, the `Identity` class will be updated imme
 
 |Value|Description|
 |---|---|
-|`Identity.DisplayName`|Reliably returns the given user's true `DisplayName`|
-|`Identity.Subscription`|Returns the `Subscription` Enum for the given user|
-|`Identity.SubType`|Returns the `SubType` Enum for the given user|
-|`Identity.UserId`|Reliably returns the given user's true `UserId`|
-|`Identity.Username`|Reliably returns the given user's true Username (`Name`)|
+|`DisplayName`|Reliably returns the given user's true `DisplayName`|
+|`Subscription`|Returns the `Subscription` Enum for the given user|
+|`SubType`|Returns the `SubType` Enum for the given user|
+|`UserId`|Reliably returns the given user's true `UserId`|
+|`Username`|Reliably returns the given user's true Username (`Name`)|
 
 ## Get a user's `Identity`
 

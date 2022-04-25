@@ -8,4 +8,5 @@
 
 |Value|Description|
 |---|---|
-|`HttpRequest.Url`|The url to make the request.|
+|`Url`|The url to make the request.|
+|`RetryC`|The amount of times to re-send the request in case it fails. Defaults to `0` (will not re-try). Limit: `math.huge`|

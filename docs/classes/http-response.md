@@ -6,8 +6,8 @@
 
 |Value|Description|
 |---|---|
-|`HttpResponse.Body`|The raw body content recieved in the response|
-|`HttpResponse.Headers`|A dictionary of headers recieved in the response|
-|`HttpResponse.StatusCode`|The status/error code recieved in the response|
-|`HttpResponse.StatusMessage`|The status/error message recieved in the response|
-|`HttpResponse.Succeeded`|A boolean that indicates whether or not the `HttpRequest` was successful|
+|`Body`|The raw body content recieved in the response|
+|`Headers`|A dictionary of headers recieved in the response|
+|`StatusCode`|The status/error code recieved in the response|
+|`StatusMessage`|The status/error message recieved in the response|
+|`Succeeded`|A boolean that indicates whether or not the `HttpRequest` was successful|
