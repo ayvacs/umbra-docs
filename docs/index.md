@@ -23,7 +23,7 @@ this site is still in beta lol thx for helping us test it!
         >
         <h3>My Account</h3>
     </div></a>
-    <a target="_blank" href="https://ave.is-a.dev/umbra/feature-board"><div style="display:inline-block;padding:20px;">
+    <a target="_blank" href="https://ave.is-a.dev/umbra/notion"><div style="display:inline-block;padding:20px;">
         <img
             width="80px"
             style="display:block;left:auto;right:auto;"
