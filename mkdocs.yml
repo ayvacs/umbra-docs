@@ -60,4 +60,5 @@ nav:
   - Libraries:
     - http: lib/http.md
     - Umbra: lib/umbra.md
+  - 45: ai/index.md
   - Feature Board: https://ave.is-a.dev/umbra/notion
