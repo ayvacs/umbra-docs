@@ -47,6 +47,7 @@ nav:
     - Umbra WebAPI:
       - Home: web-api/index.md
     - Copyright &copy; 2022 AYVACS on behalf of Umbra Software: legal/index.md
+  - Engine Literals: engine/index.md
   - Classes: 
     - HttpRequest: classes/http-request.md
     - HttpResponse: classes/http-response.md
