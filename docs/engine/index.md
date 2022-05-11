@@ -10,6 +10,12 @@ The following functions are baked into Umbra's execution engine. They can be ove
 
 Returns the script's `fenv` key (`_gay_furry_porn`) to indicate that it is launched and working as expected. Should be used instead of a string whenever possible.
 
+### `hop`
+
+`bool hop()`
+
+Attempts to serverhop. Returns `true` if the serverhop succeeded, and `false` if it didn't.
+
 ### `inf`
 
 `table inf()`
