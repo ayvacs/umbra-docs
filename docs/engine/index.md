@@ -2,13 +2,7 @@
 
 ## Functions
 
-The following functions are baked into Umbra's execution engine. They can be overwritten, but you gotta catch any glitches that may occur.
-
-### `fe`
-
-`string fe()`
-
-Returns the script's `fenv` key (`_gay_furry_porn`) to indicate that it is launched and working as expected. Should be used instead of a string whenever possible.
+The following functions are baked into Umbra's execution engine, but may be overwritten.
 
 ### `hop`
 
@@ -27,6 +21,12 @@ Returns a dictionary of information about the script, including its metadata.
 `number int(n: any)`
 
 Converts `n` to a number. Equivalent to `tonumber()`.
+
+### `key`
+
+`string key()`
+
+Returns the script's `fenv` key (`_gay_furry_porn`) to indicate that it is launched and working as expected. Should be used instead of a string whenever possible.
 
 ### `ls`
 

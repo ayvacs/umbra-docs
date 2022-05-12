@@ -59,7 +59,9 @@ nav:
     - Subscription: enums/subscription.md
     - SubType: enums/subtype.md
   - Libraries:
+    - fe: lib/fe.md
     - http: lib/http.md
+    - net: lib/net.md
     - Umbra: lib/umbra.md
   - 45: ai/index.md
   - Feature Board: https://ave.is-a.dev/umbra/notion
