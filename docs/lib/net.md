@@ -6,9 +6,13 @@ Umbra's development team has found a workaround for net ownership, allowing scri
 
 ### `transfer`
 
-`nil net:transfer(obj: Instance)`
+```
+nil net:transfer(obj: Instance)
+```
 
-`nil net:transfer(objs: table)`
+```
+nil net:transfer(objs: table)
+```
 
 Attempts to transfer ownership of the provided instance(s) to the client.
 
@@ -18,6 +22,8 @@ Takes one argument: either an `Instance` or an array of `Instance`s.
 
 ### `key`
 
-`string net.key`
+```
+string net.key
+```
 
 Returns a network key.

@@ -16,7 +16,7 @@
 
 ### Get `Release`
 
-`Release` is grabbed using a variable instead of with a function.
+`Release` is stored within a variable.
 
 ```
 print( Umbra.Release )

@@ -6,27 +6,33 @@
 
 |Value|Description|
 |---|---|
-|`Subscription.None`|The user does not have Premium|
-|`Subscription.Premium`|The user is a Premium user|
+|`None`|The user does not have Premium|
+|`Premium`|The user is a Premium user|
 
 ### Get a user's `Subscription`
 
 ### within a script
 
-`print( Umbra:Identity(`*`playerObject`*`).Subscription )`
+```
+print( Umbra:Identity(plr: Instance).Subscription )
+```
 
 ### with the web API
 
 > :bootstrap-exclamation-circle:
 **Beta Feature**<br>
-This feature is currently only available to users in a closed beta. We plan to make it available for everyone as soon as possible!
+This feature is currently only available to certain users.
 
-`https://ave.is-a.dev/umbra/api/Subscription/`*`username`*
+```
+https://ave.is-a.dev/umbra/api/v4/username/subscription
+```
 
-Alternatively, you can use the `http` library in a script:
+#### Example request
 
-> :bootstrap-exclamation-circle:
-**Required Libraries**<br>
-This feature requires the `http` library.
+``` title="Request URL"
+https://ave.is-a.dev/umbra/api/v4/frogweezer/subscription
+```
 
-`print( http.get("https://ave.is-a.dev/umbra/api/Subscription/`*`username`*`") )`
+``` title="Response"
+Premium
+```

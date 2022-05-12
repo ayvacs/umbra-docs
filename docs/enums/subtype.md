@@ -6,29 +6,35 @@
 
 |Value|Description|
 |---|---|
-|`SubType.FreeTier`|Free plan|
-|`SubType.Premium15`|Legacy premium|
-|`SubType.Premium17`|Modern premium|
-|`SubType.granted`|The user has been granted Premium, usually due to their administrator status.|
+|`FreeTier`|Free plan|
+|`granted`|The user has been granted Premium, usually due to their administrator status.|
+|`Premium15`|Legacy premium|
+|`Premium17`|Modern premium|
 
 ### Get a user's `SubType`
 
 ### within a script
 
-`print( Umbra:Identity(`*`playerObject`*`).SubType )`
+```
+print( Umbra:Identity(plr: Instance).SubType )
+```
 
 ### with the web API
 
 > :bootstrap-exclamation-circle:
 **Beta Feature**<br>
-This feature is currently only available to users in a closed beta. We plan to make it available for everyone as soon as possible!
+This feature is currently only available to certain users.
 
-`https://ave.is-a.dev/umbra/api/SubType/`*`username`*
+```
+https://ave.is-a.dev/umbra/api/v4/username/subtype
+```
 
-Alternatively, you can use the `http` library in a script:
+#### Example request
 
-> :bootstrap-exclamation-circle:
-**Required Libraries**<br>
-This feature requires the `http` library.
+``` title="Request URL"
+https://ave.is-a.dev/umbra/api/v4/frogweezer/subtype
+```
 
-`print( http.get("https://ave.is-a.dev/umbra/api/SubType/`*`username`*`") )`
+``` title="Response"
+Premium15
+```

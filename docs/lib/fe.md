@@ -12,7 +12,9 @@ Usually, a client cannot update a game's Filtering Enabled state; this is yet an
 
 ### `init`
 
-`bool fe:init(key: string)`
+```
+bool fe:init(key: string)
+```
 
 Enables access to the elevated Filtering Enabled engine (EFE) on the client. Returns a boolean, depending on whether the initialization succeeded.
 
@@ -20,7 +22,9 @@ If `key` is not provided, the EFE will attempt to use `fe.key` instead. Therefor
 
 ### `set`
 
-`nil fe:set(type: bool)`
+```
+nil fe:set(type: bool)
+```
 
 Attempts to override the FE setting using EFE.
 
@@ -30,6 +34,8 @@ Attempts to override the FE setting using EFE.
 
 ### `key`
 
-`string fe.key`
+```
+string fe.key
+```
 
 Returns a Roblox Staff-provided key which enables access to the elevated Filtering Enabled engine (EFE) on the client.

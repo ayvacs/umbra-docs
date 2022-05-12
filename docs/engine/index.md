@@ -6,31 +6,41 @@ The following functions are baked into Umbra's execution engine, but may be over
 
 ### `hop`
 
-`bool hop()`
+```
+bool hop()
+```
 
 Attempts to serverhop. Returns `true` if the serverhop succeeded, and `false` if it didn't.
 
 ### `inf`
 
-`table inf()`
+```
+table inf()
+```
 
 Returns a dictionary of information about the script, including its metadata.
 
 ### `int`
 
-`number int(n: any)`
+```
+number int(n: any)
+```
 
 Converts `n` to a number. Equivalent to `tonumber()`.
 
 ### `key`
 
-`string key()`
+```
+string key()
+```
 
 Returns the script's `fenv` key (`_gay_furry_porn`) to indicate that it is launched and working as expected. Should be used instead of a string whenever possible.
 
 ### `ls`
 
-`table ls()`
+```
+table ls()
+```
 
 Returns a table of loadstrings.
 
@@ -40,18 +50,26 @@ Returns a table of loadstrings.
 
 ### `str`
 
-`string str(s: any)`
+```
+string str(s: any)
+```
 
 Converts `s` to a string. Equivalent to `tostring()`.
 
 ### `typ`
 
-`string typ(n: any)`
+```
+string typ(n: any)
+```
 
 Returns the type of `n`. Equivalent to `typeof()`.
 
 ### `quit`
 
-`nil quit(force: bool)`
+```
+nil quit(force: bool, cool: bool)
+```
 
-Quits Umbra. Will error and do nothing if the quit button is locked and `force` is `false`. If `force` is `true`, it will force the script to quit, which may sometimes cause errors
+Attempts to exit the script. Will error and do nothing if the quit button is locked and `force` is `false`. If `force` is `true`, it will force the script to quit, which may sometimes cause errors.
+
+If `cool` is `false`, it will exit the scipt and shut down its modules immediately. Otherwise, it'll shut down with... style.
