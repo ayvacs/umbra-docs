@@ -4,19 +4,25 @@ Umbra's development team has found a workaround for net ownership, allowing scri
 
 ## Functions
 
-### `transfer`
+### `mtransf`
 
 ```
-nil net:transfer(obj: Instance)
+nil net:mtransf(objs: table)
 ```
 
+Attempts to transfer ownership of the provided array of instances to the client.
+
+`obj` may be one array of `Instance` types.
+
+### `transf`
+
 ```
-nil net:transfer(objs: table)
+nil net:transf(obj: Instance)
 ```
 
-Attempts to transfer ownership of the provided instance(s) to the client.
+Attempts to transfer ownership of the provided single instance to the client.
 
-Takes one argument: either an `Instance` or an array of `Instance`s.
+`obj` may be one argument of `Instance` type.
 
 ## Constants
 

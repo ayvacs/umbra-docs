@@ -69,6 +69,7 @@ nav:
     - fe: lib/fe.md
     - http: lib/http.md
     - net: lib/net.md
+    - tab: lib/tab.md
     - Umbra: lib/umbra.md
   - 45: ai/index.md
   - Feature Board: https://ave.is-a.dev/umbra/notion
