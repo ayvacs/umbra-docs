@@ -22,7 +22,7 @@ These limitations are baked into Roblox's engine with no way to bypass them with
 ### `ajax`
 
 ```
-HttpRequest http:ajax( data: HttpRequest )
+HttpResponse http:ajax( data: HttpRequest )
 ```
 
 Performs an HTTP request with the specified parameters.
@@ -38,7 +38,7 @@ Performs a `GET` request to the specifed `url`.
 ### `post`
 
 ```
-string http:post( url: string, content: string )
+nil http:post( url: string, content: string )
 ```
 
 Performs a `PUSH` request to the specified `url` with the specified `content`.

@@ -54,7 +54,13 @@ nav:
     - Umbra WebAPI:
       - Home: web-api/index.md
     - Copyright &copy; 2022 AYVACS on behalf of Umbra Software: legal/index.md
-  - Engine Literals: engine/index.md
+  - Libraries:
+    - ai: lib/ai.md
+    - fe: lib/fe.md
+    - http: lib/http.md
+    - net: lib/net.md
+    - tab: lib/tab.md
+    - Umbra: lib/umbra.md
   - Classes: 
     - HttpRequest: classes/http-request.md
     - HttpResponse: classes/http-response.md
@@ -65,11 +71,5 @@ nav:
   - Enums:
     - Subscription: enums/subscription.md
     - SubType: enums/subtype.md
-  - Libraries:
-    - fe: lib/fe.md
-    - http: lib/http.md
-    - net: lib/net.md
-    - tab: lib/tab.md
-    - Umbra: lib/umbra.md
-  - 45: ai/index.md
+  - Engine Literals: engine/index.md
   - Feature Board: https://ave.is-a.dev/umbra/notion
