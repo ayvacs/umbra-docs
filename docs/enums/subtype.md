@@ -21,12 +21,12 @@ print( Umbra:Identity(plr: Instance).SubType )
 
 !!! example
 
-    ``` title="Script"
+    ``` title="Script" linenums="1"
     local id = Umbra:Identity(game:GetService("Players").LocalPlayer)
     print(id.SubType)
     ```
 
-    ``` title="Potential Output"
+    ``` title="Potential Output" linenums="1"
     Enum.SubType.Premium15
     ```
 

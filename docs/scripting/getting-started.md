@@ -9,23 +9,35 @@ To write a script, you'll first need an **Umbra developer key.** If you don't ha
 5. Follow the installation steps after you unlock your key
 6. In your script, add this line: 
 
-```
+``` linenums="1"
 Umbra = require( SCRIPTLOCATION ):Login( KEY )
 ```
 
-> Replace `SCRIPTLOCATION` with the location of the script, and `KEY` with your key.<br/>
-If you set your script up correctly you can easily login like this:<br/>
-```
-Umbra = require(
-    manifest.SCRIPTLOCATION
-):Login(
-    manifest.KEY
-)
-```
-If you want to use debug functions, please use this line instead:<br/>
-```
-Umbra = require( SCRIPT ):DRM( KEY , [[ Yes I Know What I Am Doing ]])
-```
+!!! info "Variables"
+
+    Replace `SCRIPTLOCATION` with the location of the script, and `KEY` with your key.
+
+!!! info "Manifest"
+
+    If you've already set your script's `manifest` variable, you can initialize it with this simple function:
+
+    ``` linenums="1"
+    Umbra = require(
+        manifest.SCRIPTLOCATION
+    ):Login(
+        manifest.KEY
+    )
+    ```
+
+!!! bug "Debug Mode"
+
+    If you want to use debug functions, please use this line instead:
+
+    ``` linenums="1"
+    Umbra = require( SCRIPT ):DRM( KEY, [[ Yes I Know What I Am Doing ]])
+    ```
+
+    Simply use `:DRM()` instead of `:Login()`, and pass `[[ Yes I Know What I Am Doing ]]` as an additional second argument to confirm that, well, you knwo what you are doing.
 
 You'll have to repeat these steps for each individual script that you create.
 

@@ -16,6 +16,6 @@ If an exploit is found to bypass this, the `Identity` class will be updated imme
 
 ## Get a user's `Identity`
 
-```
+``` linenums="1"
 print( Umbra:Identity(user) )
 ```

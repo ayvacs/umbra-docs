@@ -8,7 +8,7 @@ Project 45
 
 ### Requiring parent module
 
-```
+``` linenums="1"
 ai = require(Umbra:GetService("Project45", true))
 ```
 
@@ -16,29 +16,24 @@ ai = require(Umbra:GetService("Project45", true))
 
 AI instances may be created with the `new()` constructor.
 
-```
+``` linenums="1"
 local AI_Instance = ai.new()
 ```
 
-AI instances must be assigned to either player `Instance`s or usernames. AI instances may not be reassigned.
+AI instances must be assigned with the to either player `Instance`s or usernames. AI instances may not be reassigned.
 
-```
-AI_Instance:Assign(player: Instance)
-AI_Instance:Assign(username: string)
-```
+!!! example "Examples (both work)"
 
-Alternatively:
-
-```
-local AI_Instance = ai.new():Assign(player: Instance)
-local AI_Instance = ai.new():Assign(username: string)
-```
+    ``` linenums="1"
+    AI_Instance:Assign(player: Instance)
+    AI_Instance:Assign(username: string)
+    ```
 
 ## Destroying an AI instance
 
 AI instances may be destroyed with the `Exit()` method. In order for the destruction to succeed, please supply `self.l` as the only argument.
 
-```
+``` linenums="1"
 AI_Instance:Destroy( AI_Instance.l )
 ```
 
@@ -46,7 +41,7 @@ AI_Instance:Destroy( AI_Instance.l )
 
 The `ai` library may be exited with the `exit()` method. In order to exit, all existing AI instances must be destroyed.
 
-```
+``` linenums="1"
 ai:exit()
 ```
 
@@ -56,7 +51,7 @@ ai:exit()
 
 AI instances may begin tracking via the `Set()` method.
 
-```
+``` linenums="1"
 AI_Instance:Set(endpoint: Enum)
 
 -- example:
@@ -77,7 +72,7 @@ ai:plrScare()
 
 ### Graphing output
 
-```
+``` linenums="1"
 local graph = AI_Instance.graph()
 
 -- calling :Run() will begin the graph's functions and
@@ -96,6 +91,6 @@ graph:Rm()
 
 ### Personalization
 
-```
+``` linenums="1"
 AI_Instance.personalization():_Enable(self)
 ```

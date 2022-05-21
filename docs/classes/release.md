@@ -18,6 +18,6 @@
 
 `Release` is stored within a variable.
 
-```
+``` linenums="1"
 print( Umbra.Release )
 ```

@@ -18,7 +18,7 @@ An extended form of the native `table` library
 
     Furthermore, calling the following code would print `false`:
 
-    ```
+    ``` linenums="1"
     local t1 = {1, 2, 3}
     tab.prefixAll(t1, 1)
 
@@ -51,7 +51,7 @@ Returns a [deep copy](https://developer.roblox.com/en-us/articles/Cloning-tables
 
     Furthermore, calling the following code would print `false`:
 
-    ```
+    ``` linenums="1"
     local t1 = {1, 2, 3}
     tab.prefixAll(t1, 1)
 
@@ -64,27 +64,27 @@ table tab.prefixAll(t: table, pre: string)
 
 Prepends `pre` to all values of **a copy of ** `t`.
 
-#### Example
+!!! example
 
-```
-local t1 = {
-    ", World!",
-    " everyone!"
-    " there!"
-}
+    ```linenums="1"
+    local t1 = {
+        ", World!",
+        " everyone!"
+        " there!"
+    }
 
-local t2 = tab.prefixAll(t1, "Hello")
+    local t2 = tab.prefixAll(t1, "Hello")
 
-print(t1[1])
--- ", World!"
-print(t2[1])
--- "Hello, World!"
+    print(t1[1])
+    -- ", World!"
+    print(t2[1])
+    -- "Hello, World!"
 
-print(t1[2])
--- " everyone!"
-print(t2[2])
--- "Hello everyone!"
-```
+    print(t1[2])
+    -- " everyone!"
+    print(t2[2])
+    -- "Hello everyone!"
+    ```
 
 ### `random`
 
@@ -94,16 +94,16 @@ any tab.random(t: table)
 
 Returns a random value from `t`.
 
-#### Example
+!!! example
 
-In the following example, the first two lines would produce the same result as the fourth.
+    In the following example, the first two lines would produce the same result as the fourth.
 
-```
-local t = {1, 4, 8, 9}
-local r1 = table.random(t, #t)
+    ``` linenums="1"
+    local t = {1, 4, 8, 9}
+    local r1 = table.random(t, #t)
 
-local r2 = tab.random({ 1, 4, 8, 9 })
-```
+    local r2 = tab.random({ 1, 4, 8, 9 })
+    ```
 
 ### `suffixAll`
 
@@ -117,7 +117,7 @@ local r2 = tab.random({ 1, 4, 8, 9 })
 
     Furthermore, calling the following code would print `false`:
 
-    ```
+    ``` linenums="1"
     local t1 = {1, 2, 3}
     tab.prefixAll(t1, 1)
 
