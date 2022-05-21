@@ -2,9 +2,13 @@
 
 A place for articles and tutorials to help you build the best mods, apps, APIs, themes, exploits, and other cool stuff using the Umbra execution engine. Except pancakes. Sorry.
 
-> :bootstrap-exclamation-circle:
-**Reminder**<br>
-this site is still in beta lol thx for helping us test it!
+!!! hint "Reminder"
+
+    this site is still in beta lol thx for helping us test it!
+
+!!! bug "Bug Reports"
+
+    If you find any bugs, don't hesitate to report them on [our Feature Board](https://ayvacs.notion.site/Suggestions-8141cfe8d7484e3aa56d17681709edf9) (under "Feature Suggestions: Documentation")
 
 <div align="center" style="box-shadow:0 0 12px 12px rgb(0 0 0 / 10%);">
     <a href="/scripting/getting-started"><div style="display:inline-block;padding:20px;">
