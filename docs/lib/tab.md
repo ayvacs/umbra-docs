@@ -8,13 +8,28 @@ An extended form of the native `table` library
 
 ### `concat`
 
+??? warning "Copies Argument(s)"
+
+    The following function will execute on **a copy of** the provided table(s), **NOT THE ACTUAL TABLE(S) THEMSEL(VES)**.
+
+    This is important to note because when assigning a table to two (or more) different variables, all of the copied tables will update with the other(s). 
+
+    For example, the function `tab.prefixAll(t, pre)` function will prepend `pre` to all values of **a copy of** `t`, meaning that in order for the actual `t` variable to change, you must call `t = tab.prefixAll(t, pre)`, and that simply `tab.prefixAll(t, pre)` would not work.
+
+    Furthermore, calling the following code would print `false`:
+
+    ```
+    local t1 = {1, 2, 3}
+    tab.prefixAll(t1, 1)
+
+    print( t1 == {11, 12, 13} )
+    ```
+
 ```
 table tab.concat(t1: table, t2: table)
 ```
 
 Concatenates **copies of** arrays `t1` and `t2`, and returns the concatenated array.
-
-It is important to note that this function will concatenate copies of the provided arrays, not the arrays themselves. This means that you may easily concatenate read-only arrays.
 
 ### `copy`
 
@@ -26,11 +41,28 @@ Returns a [deep copy](https://developer.roblox.com/en-us/articles/Cloning-tables
 
 ### `prefixAll`
 
+??? warning "Copies Argument(s)"
+
+    The following function will execute on **a copy of** the provided table(s), **NOT THE ACTUAL TABLE(S) THEMSEL(VES)**.
+
+    This is important to note because when assigning a table to two (or more) different variables, all of the copied tables will update with the other(s). 
+
+    For example, the function `tab.prefixAll(t, pre)` function will prepend `pre` to all values of **a copy of** `t`, meaning that in order for the actual `t` variable to change, you must call `t = tab.prefixAll(t, pre)`, and that simply `tab.prefixAll(t, pre)` would not work.
+
+    Furthermore, calling the following code would print `false`:
+
+    ```
+    local t1 = {1, 2, 3}
+    tab.prefixAll(t1, 1)
+
+    print( t1 == {11, 12, 13} )
+    ```
+
 ```
 table tab.prefixAll(t: table, pre: string)
 ```
 
-Prepends `pre` to all values of `t`.
+Prepends `pre` to all values of **a copy of ** `t`.
 
 #### Example
 
@@ -46,10 +78,10 @@ local t2 = tab.prefixAll(t1, "Hello")
 print(t1[1])
 -- ", World!"
 print(t2[1])
--- " everyone!"
+-- "Hello, World!"
 
 print(t1[2])
--- "Hello, world!"
+-- " everyone!"
 print(t2[2])
 -- "Hello everyone!"
 ```
@@ -62,16 +94,6 @@ any tab.random(t: table)
 
 Returns a random value from `t`.
 
-With this function, declaring a variable is unnecessary.
-
-### `suffixAll`
-
-```
-table tab.suffixAll(t: table, suf: string)
-```
-
-Appepends `suf` to all values of `t`.
-
 #### Example
 
 In the following example, the first two lines would produce the same result as the fourth.
@@ -82,3 +104,28 @@ local r1 = table.random(t, #t)
 
 local r2 = tab.random({ 1, 4, 8, 9 })
 ```
+
+### `suffixAll`
+
+??? warning "Copies Argument(s)"
+
+    The following function will execute on **a copy of** the provided table(s), **NOT THE ACTUAL TABLE(S) THEMSEL(VES)**.
+
+    This is important to note because when assigning a table to two (or more) different variables, all of the copied tables will update with the other(s). 
+
+    For example, the function `tab.prefixAll(t, pre)` function will prepend `pre` to all values of **a copy of** `t`, meaning that in order for the actual `t` variable to change, you must call `t = tab.prefixAll(t, pre)`, and that simply `tab.prefixAll(t, pre)` would not work.
+
+    Furthermore, calling the following code would print `false`:
+
+    ```
+    local t1 = {1, 2, 3}
+    tab.prefixAll(t1, 1)
+
+    print( t1 == {11, 12, 13} )
+    ```
+
+```
+table tab.suffixAll(t: table, suf: string)
+```
+
+Appepends `suf` to all values of **a copy of ** `t`.

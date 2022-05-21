@@ -1,8 +1,8 @@
 # [Deprecated] `Codesign`
 
-> :bootstrap-exclamation-circle:
-**Deprecated**<br>
-This class is no longer supported and should not be used for new work.
+???+ fail "Deprecated"
+
+    This class is no longer supported and should not be used for new work.
 
 `Codesign` provides information about the engine.
 

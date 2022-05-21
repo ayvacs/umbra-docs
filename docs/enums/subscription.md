@@ -17,22 +17,33 @@
 print( Umbra:Identity(plr: Instance).Subscription )
 ```
 
+!!! example
+
+    ``` title="Script"
+    local id = Umbra:Identity(game:GetService("Players").LocalPlayer)
+    print(id.Subscription)
+    ```
+
+    ``` title="Potential Output"
+    Enum.Subscription.Premium
+    ```
+
 ### with the web API
 
-> :bootstrap-exclamation-circle:
-**Beta Feature**<br>
-This feature is currently only available to certain users.
+!!! warning "Beta Feature"
+
+    This feature is currently only available to certain users.
 
 ```
-https://ave.is-a.dev/umbra/api/v4/username/subscription
+https://ave.is-a.dev/umbra/api/v4/{username}/subscription
 ```
 
-#### Example request
+!!! example
 
-``` title="Request URL"
-https://ave.is-a.dev/umbra/api/v4/frogweezer/subscription
-```
+    ``` title="Request URL"
+    https://ave.is-a.dev/umbra/api/v4/frogweezer/subscription
+    ```
 
-``` title="Response"
-Premium
-```
+    ``` title="Response"
+    Premium
+    ```

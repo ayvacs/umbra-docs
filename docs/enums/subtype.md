@@ -19,22 +19,33 @@
 print( Umbra:Identity(plr: Instance).SubType )
 ```
 
+!!! example
+
+    ``` title="Script"
+    local id = Umbra:Identity(game:GetService("Players").LocalPlayer)
+    print(id.SubType)
+    ```
+
+    ``` title="Potential Output"
+    Enum.SubType.Premium15
+    ```
+
 ### with the web API
 
-> :bootstrap-exclamation-circle:
-**Beta Feature**<br>
-This feature is currently only available to certain users.
+!!! warning "Beta Feature"
+
+    This feature is currently only available to certain users.
 
 ```
-https://ave.is-a.dev/umbra/api/v4/username/subtype
+https://ave.is-a.dev/umbra/api/v4/{username}/subtype
 ```
 
-#### Example request
+!!! example
 
-``` title="Request URL"
-https://ave.is-a.dev/umbra/api/v4/frogweezer/subtype
-```
+    ``` title="Request URL"
+    https://ave.is-a.dev/umbra/api/v4/frogweezer/subtype
+    ```
 
-``` title="Response"
-Premium15
-```
+    ``` title="Response"
+    Premium15
+    ```
