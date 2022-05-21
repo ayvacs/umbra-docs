@@ -22,11 +22,7 @@ Umbra = require( SCRIPTLOCATION ):Login( KEY )
     If you've already set your script's `manifest` variable, you can initialize it with this simple function:
 
     ``` linenums="1"
-    Umbra = require(
-        manifest.SCRIPTLOCATION
-    ):Login(
-        manifest.KEY
-    )
+    Umbra = require(manifest.SCRIPTLOCATION):Login(manifest.KEY)
     ```
 
 !!! bug "Debug Mode"
@@ -34,10 +30,10 @@ Umbra = require( SCRIPTLOCATION ):Login( KEY )
     If you want to use debug functions, please use this line instead:
 
     ``` linenums="1"
-    Umbra = require( SCRIPT ):DRM( KEY, [[ Yes I Know What I Am Doing ]])
+    Umbra = require(SCRIPT):DRM(KEY, [[ Yes I Know What I Am Doing ]])()
     ```
 
-    Simply use `:DRM()` instead of `:Login()`, and pass `[[ Yes I Know What I Am Doing ]]` as an additional second argument to confirm that, well, you knwo what you are doing.
+    Simply use `:DRM()` instead of `:Login()`, and pass `[[ Yes I Know What I Am Doing ]]` as an additional second argument to confirm that, well, you know what you are doing. Additionally, add an empty set of brackets after the `require` function.
 
 You'll have to repeat these steps for each individual script that you create.
 
