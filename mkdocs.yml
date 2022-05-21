@@ -57,12 +57,12 @@ nav:
       - Home: web-api/index.md
     - Copyright &copy; 2022 AYVACS on behalf of Umbra Software: legal/index.md
   - Libraries:
-    - ai: lib/ai.md
-    - fe: lib/fe.md
-    - http: lib/http.md
-    - net: lib/net.md
-    - tab: lib/tab.md
-    - Umbra: lib/umbra.md
+    - ai: libraries/ai.md
+    - fe: libraries/fe.md
+    - http: libraries/http.md
+    - net: libraries/net.md
+    - tab: libraries/tab.md
+    - Umbra: libraries/umbra.md
   - Classes: 
     - HttpRequest: classes/http-request.md
     - HttpResponse: classes/http-response.md
