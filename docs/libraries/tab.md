@@ -31,6 +31,14 @@ table tab.concat(t1: table, t2: table)
 
 Concatenates **copies of** arrays `t1` and `t2`, and returns the concatenated array.
 
+### `contains`
+
+```
+bool tab.contains(t: table, c: any)
+```
+
+Returns whether or not table `t` contains the value `c`.
+
 ### `copy`
 
 ```
