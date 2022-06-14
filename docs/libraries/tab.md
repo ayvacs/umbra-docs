@@ -137,3 +137,11 @@ table tab.suffixAll(t: table, suf: string)
 ```
 
 Appepends `suf` to all values of **a copy of ** `t`.
+
+### `tostring`
+
+```
+string tab.tostring(t: table)
+```
+
+Returns a string version of `t`. Useful for printing logs to files
