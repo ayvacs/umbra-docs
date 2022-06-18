@@ -12,14 +12,6 @@ bool hop()
 
 Attempts to serverhop. Returns `true` if the serverhop succeeded, and `false` if it didn't.
 
-### `inf`
-
-```
-table inf()
-```
-
-Returns a dictionary of information about the script, including its metadata.
-
 ### `int`
 
 ```
