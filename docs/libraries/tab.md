@@ -1,6 +1,8 @@
 # `tab` Library
 
-An extended form of the native `table` library
+An extended form of the native `table` library.
+
+The source code of this library is available [on GitHub](https://github.com/ayvacs/umbra/blob/main/src/tab).
 
 ## Added functions
 
