@@ -13,22 +13,48 @@ Usually, a client cannot update a game's Filtering Enabled state; this is yet an
 ### `init`
 
 ```
-bool fe:init(key: string)
+bool, string fe:init(key: string)
 ```
 
-Enables access to the elevated Filtering Enabled engine (EFE) on the client. Returns a boolean, depending on whether the initialization succeeded.
+Enables access to the elevated Filtering Enabled engine (EFE) on the client.
 
-If `key` is not provided, the EFE will attempt to use `fe.key` instead. Therefore, you can simply call `fe:init()` to enable access.
+`key` defaults to `fe.key`.
+
+This function returns two values: a bool and a string; a success indicator and success message, respectfully.
+
+#### Example
+
+```
+local success, msg = fe:init()
+
+if success then
+    print("Successfully enabled access to the EFE engine with code [" .. tostring(msg) .. "]")
+    -- Successfully enabled access to the EFE engine with code [200 OK]
+else
+    warn("There was an error enabling access to the EFE engine.")
+    warn(msg)
+    -- There was an error enabling access to the EFE engine.
+    -- 401 UNAUTHORIZED
+end
+```
 
 ### `set`
 
 ```
-nil fe:set(type: bool)
+nil fe:set(type: EFE)
 ```
 
 Attempts to override the FE setting using EFE.
 
-`type` must be a boolean: `true` if you wish to enable FE, and `false` if you wish to disable it.
+#### Example
+
+```
+-- override to Filtering Disabled
+fe:set(EFE.FD)
+
+-- override to Filtering Enabled
+fe:set(EFE.FE)
+```
 
 ## Constants
 
