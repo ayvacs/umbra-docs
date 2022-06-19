@@ -64,6 +64,7 @@ nav:
     - tab: libraries/tab.md
     - Umbra: libraries/umbra.md
   - Classes: 
+    - EFE: classes/efe.md
     - HttpRequest: classes/http-request.md
     - HttpResponse: classes/http-response.md
     - Identity: classes/identity.md
