@@ -6,7 +6,7 @@ The source code of this library is available [on GitHub](https://github.com/ayva
 
 ## Limitations
 
-These limitations are baked into Roblox's engine with no way to bypass them without an `X-FE` key.
+These limitations are baked into Roblox's engine with no way to bypass them, unless the request is made with an `X-FE` key - we are currently working on adding `X-FE` support.
 
 * There are port restrictions. You cannot use port **1194** or any port **below 1024**, except **80** and **443**. If you try to use a blocked port, you will receive either a **403 Forbidden** or **ERR_ACCESS_DENIED** error.
 * For each Roblox game server, there is a limit of **500 HTTP requests per minute**. Exceeding this may cause request-sending functions to stall entirely for about **30 seconds**. While requests made using the `http` library are not subject to this limit, they will count towards the limit for other scripts in-game, so please pay attention to that.
