@@ -4,10 +4,10 @@
 
 ## Values
 
-|Value|Description|
-|---|---|
-|`Body`|The raw body content recieved in the response|
-|`Headers`|A dictionary of headers recieved in the response|
-|`StatusCode`|The status/error code recieved in the response|
-|`StatusMessage`|The status/error message recieved in the response|
-|`Succeeded`|A boolean that indicates whether or not the `HttpRequest` was successful|
+|Value|Type|Description|
+|---|---|--|
+|`Body`|string|The raw body content recieved.|
+|`Headers`|table|A dictionary of headers recieved.|
+|`StatusCode`|number|The status/error code recieved.|
+|`StatusMessage`|string|The status/error message recieved.|
+|`Success`|bool|A boolean that indicates whether or not the `HttpRequest` was successful.|

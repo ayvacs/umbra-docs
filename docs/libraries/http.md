@@ -2,6 +2,8 @@
 
 The `http` library provides methods to easily make HTTP requests in your scripts. It allows users to make use of Roblox's native <a href="https://developer.roblox.com/en-us/api-reference/class/HttpService" target="_blank">HttpService</a> functions within LocalScripts (Umbra scripts), which is normally impossible.
 
+The source code of this library is available [on GitHub](https://github.com/ayvacs/umbra/blob/main/src/http).
+
 ## Limitations
 
 These limitations are baked into Roblox's engine with no way to bypass them without an `X-FE` key.
@@ -22,7 +24,7 @@ These limitations are baked into Roblox's engine with no way to bypass them with
 ### `ajax`
 
 ```
-HttpResponse http:ajax( data: HttpRequest )
+HttpResponse http.ajax( data: HttpRequest )
 ```
 
 Performs an HTTP request with the specified parameters.
@@ -30,7 +32,7 @@ Performs an HTTP request with the specified parameters.
 ### `get`
 
 ```
-string http:get( url: string )
+string http.get( url: string )
 ```
 
 Performs a `GET` request to the specifed `url`.
@@ -38,7 +40,7 @@ Performs a `GET` request to the specifed `url`.
 ### `post`
 
 ```
-nil http:post( url: string, content: string )
+nil http.post( url: string, content: string )
 ```
 
 Performs a `PUSH` request to the specified `url` with the specified `content`.
