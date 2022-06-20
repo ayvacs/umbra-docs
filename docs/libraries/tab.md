@@ -31,7 +31,7 @@ The source code of this library is available [on GitHub](https://github.com/ayva
 table tab.concat(t1: table, t2: table)
 ```
 
-Concatenates **copies of** arrays `t1` and `t2`, and returns the concatenated array.
+Concatenates **copies of** arrays `t1` and `t2` together in the same manner of strings, numbers, or any other concatenable value. Returns the concatenated array.
 
 ### `contains`
 
@@ -39,7 +39,7 @@ Concatenates **copies of** arrays `t1` and `t2`, and returns the concatenated ar
 bool tab.contains(t: table, c: any)
 ```
 
-Returns whether or not table `t` contains the value `c`.
+Determines whether or not table `t` contains the value `c`.
 
 ### `copy`
 
@@ -48,6 +48,14 @@ table tab.copy(t: table)
 ```
 
 Returns a [deep copy](https://developer.roblox.com/en-us/articles/Cloning-tables) of `t`.
+
+### `keys`
+
+```
+table tab.keys(t: table)
+```
+
+Returns an array of table `t`'s own enumerable property **keys**, iterated in the same order as that provided by a `for...in` loop.
 
 ### `prefixAll`
 
@@ -72,7 +80,7 @@ Returns a [deep copy](https://developer.roblox.com/en-us/articles/Cloning-tables
 table tab.prefixAll(t: table, pre: string)
 ```
 
-Prepends `pre` to all values of **a copy of ** `t`.
+Prepends `pre` to all values of **a copy of** `t`.
 
 !!! example
 
@@ -102,7 +110,7 @@ Prepends `pre` to all values of **a copy of ** `t`.
 any tab.random(t: table)
 ```
 
-Returns a random value from `t`.
+Returns a random value from table `t`.
 
 !!! example
 
@@ -138,7 +146,7 @@ Returns a random value from `t`.
 table tab.suffixAll(t: table, suf: string)
 ```
 
-Appepends `suf` to all values of **a copy of ** `t`.
+Appepends `suf` to all values of **a copy of** `t`.
 
 ### `tostring`
 
@@ -146,4 +154,12 @@ Appepends `suf` to all values of **a copy of ** `t`.
 string tab.tostring(t: table)
 ```
 
-Returns a string version of `t`. Useful for printing logs to files
+Returns a string version of `t`. This function should not be used within tables, rather for exporting table data into string form. 
+
+### `values`
+
+```
+table tab.values(t: table)
+```
+
+Returns an array of table `t`'s own enumerable property **values**, iterated in the same order as that provided by a `for...in` loop.
