@@ -57,6 +57,16 @@ table tab.keys(t: table)
 
 Returns an array of table `t`'s own enumerable property **keys**, iterated in the same order as that provided by a `for...in` loop.
 
+!!! example
+
+    ``` linenums="1"
+    local myInventory = { sword = 1, shield = 1 apple = 16, rupee = 1504 }
+    local inventoryItems = tab.keys(myInventory)
+
+    print(inventoryItems)
+    -- expected result: { sword, shield, apple, rupee }
+    ```
+
 ### `prefixAll`
 
 ??? warning "Copies Argument(s)"
@@ -148,6 +158,16 @@ table tab.suffixAll(t: table, suf: string)
 
 Appepends `suf` to all values of **a copy of** `t`.
 
+### `sum`
+
+```
+number tab.sum(t: table)
+```
+
+Returns the sum of all of `t`'s **number** values.
+
+If `t` contains any non-number values, this function simply skips them.
+
 ### `tostring`
 
 ```
@@ -163,3 +183,25 @@ table tab.values(t: table)
 ```
 
 Returns an array of table `t`'s own enumerable property **values**, iterated in the same order as that provided by a `for...in` loop.
+
+!!! example
+
+    ``` linenums="1"
+    local myDataStore = {
+        ["Telamon"] = {
+            XP = 250
+        },
+        ["ROBLOX"] = {
+            XP = 15204
+        },
+        ["frogweezer"] = {
+            XP = 31281
+            ...
+        }
+    }
+    local allValues = tab.values(myDataStore)
+    local allStats = tab.values(allValues)
+    local allXP = tab.sum(allStats)
+
+    print("Players have collected a total of " .. allXP .. " XP in this game!")
+    ```
